@@ -1,8 +1,6 @@
 cmake_minimum_required(VERSION 3.15)
-project(Assignment_9 C)
-
+project(untitled C)
 
 set(CMAKE_C_STANDARD 99)
 
-
-add_executable(Assignment_9 main.c)
+add_executable(untitled main.c)
