@@ -7,6 +7,7 @@ int isSafe(int x, int y);
 int solveMaze(int r, int c);
 void printSolution();
 
+
 int mazeMatrix[M][N] = {
         {1, 1, 0, 0},
         {0, 1, 0, 0},
@@ -33,9 +34,10 @@ int solveMaze(int r, int c) {
 
     if ((r == M - 1) && (c == N - 1)) {
         printSolution();
+
         printf("----------\n");
+
         return 1;
-        //check if algorithm is done
     }
 
     if (isSafe(r,c) && mazeMatrix[r][c]) {
@@ -59,7 +61,7 @@ int solveMaze(int r, int c) {
             }
     }
 
-    // backtrack from current cell and remove it from current path
+
     solutionMatrix[r][c] = 0;
     return 0;
 }
