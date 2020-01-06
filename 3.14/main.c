@@ -1,8 +1,9 @@
 #include <stdlib.h>
 #include <stdio.h>
 
+
 int a[20][20];
-int tD, n;///tD-Dimension of the table
+int tD, n;
 int poz_x = 1, poz_y = 1;
 int xMove[9] = {0, 1, 2,2,1,-1,-2,-2,-1};
 int yMove[9] = {0,-2,-1,1,2, 2, 1,-1,-2};
